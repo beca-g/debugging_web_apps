@@ -9,8 +9,8 @@ feature "table flip a struggle" do
   scenario "submit 'Programming' as a struggle and see the table get flipped" do
     visit("/")
     fill_in :struggle, with: "Programming"
-    visit("/fliiped_struggle")
     click_button "Flip table"
+    visit("/fliiped_struggle")
     expect(page).to have_content "(Programming!!!)> (╯°□°）╯︵ ┻━┻"
   end
 end
