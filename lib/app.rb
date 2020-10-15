@@ -4,8 +4,8 @@ require_relative "./random_happy_emoji"
 
 class StruggleTableFlipperApp < Sinatra::Base
 
-  get "/emoji" do
-    @emoji =  RandomHappyEmoji.new
+  get "/" do
+    @happy_emoji =  RandomHappyEmoji.new
     erb :index
   end
 

@@ -12,7 +12,7 @@ feature "show a random happy emoji on the home page" do
   end
 
   scenario "the happy emoji appears" do
-    srand(67809)
+    srand(67810)
     visit("/")
     expect(page).to have_content(":)")
   end
