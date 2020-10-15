@@ -10,7 +10,6 @@ feature "table flip a struggle" do
     visit("/")
     fill_in :struggle, with: "Programming"
     click_button "Flip table"
-    visit("/fliiped_struggle")
     expect(page).to have_content "(Programming!!!)> (╯°□°）╯︵ ┻━┻"
   end
 end
